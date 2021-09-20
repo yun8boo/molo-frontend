@@ -1,5 +1,5 @@
-import { Title } from "./Title";
-import { Content } from "./Content";
+import { Title } from './Title';
+import { Content } from './Content';
 
 export class Post {
   private $title: Title;
