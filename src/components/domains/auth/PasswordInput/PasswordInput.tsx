@@ -6,8 +6,6 @@ import {
   Input,
   InputRightElement,
   Button,
-  FormHelperText,
-  Link,
 } from '@chakra-ui/react';
 import { FaLock } from 'react-icons/fa';
 
@@ -28,7 +26,7 @@ export const PasswordInput = ({
   return (
     <FormControl>
       <InputGroup>
-        <InputLeftElement>
+        <InputLeftElement pointerEvents="none">
           <CFaLock color="gray.300" />
         </InputLeftElement>
         <Input
@@ -42,9 +40,6 @@ export const PasswordInput = ({
           </Button>
         </InputRightElement>
       </InputGroup>
-      <FormHelperText textAlign="right">
-        <Link>forgot password?</Link>
-      </FormHelperText>
     </FormControl>
   );
 };

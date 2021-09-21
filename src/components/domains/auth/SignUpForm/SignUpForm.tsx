@@ -8,15 +8,15 @@ interface Props {
   emailOnChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   passwordValue: string;
   passwordOnChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  login: () => void;
+  signUp: () => void;
 }
 
-export const LoginForm = ({
+export const SignUpForm = ({
   emailValue,
   emailOnChange,
   passwordValue,
   passwordOnChange,
-  login,
+  signUp,
 }: Props) => {
   return (
     <Box minW={{ base: '90%', md: '468px' }}>
@@ -32,7 +32,7 @@ export const LoginForm = ({
           value={passwordValue}
           onChange={passwordOnChange}
         />
-        <Button onClick={login} title="Login" />
+        <Button onClick={signUp} title="SignUp" />
       </Stack>
     </Box>
   );
