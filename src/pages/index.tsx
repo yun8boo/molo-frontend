@@ -1,16 +1,13 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { useState } from 'react';
 import {
   Flex,
   Heading,
   Stack,
 } from '@chakra-ui/react';
-import { LoginFormContainer } from '@/components/domains/auth/LogingForm';
+import { LoginFormContainer } from '@/components/domains/auth/LoginForm';
 
 const Home: NextPage = () => {
-  const [showPassword, setShowPassword] = useState(false);
-  const handleShowClick = () => setShowPassword(!showPassword);
   return (
     <Flex
       flexDirection="column"
