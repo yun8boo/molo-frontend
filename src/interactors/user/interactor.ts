@@ -14,7 +14,7 @@ export const userInteractor = () => {
       });
     return {
       data: !!data
-        ? new CurrentUser(data.accessToken, data.id, data.email, data.name)
+        ? new CurrentUser(data.id, data.email, data.name)
         : undefined,
       error,
     };

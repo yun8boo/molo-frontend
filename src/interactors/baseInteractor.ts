@@ -15,7 +15,7 @@ const createHeaders = (token?: string): HeadersInit => {
   if (token) {
     return {
       'Content-Type': 'application/json',
-      token,
+      token: `Bearer ${token}`,
     };
   }
   return {

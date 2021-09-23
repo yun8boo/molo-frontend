@@ -1,6 +1,7 @@
 // models
 import { Login } from '@/models/auth/Login';
 import { SignUp } from '@/models/auth/SignUp';
+import { CurrentUser } from '@/models/user/CurrentUser';
 // types
 import { LoginResponseType, SignUpResponseType } from '@/types/api/auth';
 // interactor

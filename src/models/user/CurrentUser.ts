@@ -1,18 +1,12 @@
 export class CurrentUser {
-  private $accessToken: string;
   private $id: number;
   private $email: string;
   private $name: string;
 
-  constructor(accessToken: string, id: number, email: string, name: string) {
-    this.$accessToken = accessToken;
+  constructor(id: number, email: string, name: string) {
     this.$id = id;
     this.$email = email;
     this.$name = name;
-  }
-
-  public get accessToken(): string {
-    return this.$accessToken;
   }
 
   public get id(): number {
