@@ -10,22 +10,14 @@ const Home: NextPage = () => {
       height="100vh"
       backgroundColor="gray.200"
     >
-      <Flex
-      justifyContent="center"
-      alignItems="center"
-      width="30%"
-    >
-      left
+      <Flex justifyContent="center" alignItems="center" width="340px">
+        left
+      </Flex>
+      <Flex justifyContent="center" alignItems="center" width="calc(100% - 340px)">
+        right
+      </Flex>
     </Flex>
-    <Flex
-      justifyContent="center"
-      alignItems="center"
-      width="70%"
-    >
-      right
-    </Flex>
-    </Flex>
-  )
+  );
 };
 
 export default Home;
